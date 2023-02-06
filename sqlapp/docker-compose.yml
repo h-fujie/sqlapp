@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    build: ./db
+    container_name: db
+    tty: true
+  app:
+    build: ./app
+    container_name: app
+    tty: true
